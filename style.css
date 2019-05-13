@@ -11,8 +11,14 @@
   padding: 5px 10px;
   border-radius: 8px;
   font-family: lato;
+  width:fit-content;
 }
 
+.btn:hover
+{
+  opacity: 0.7;
+  box-shadow:2px 2px 2px #3b4544;
+}
 .btn-sm
 {
   font-size: 10px;
@@ -73,6 +79,8 @@
 .btn-warning
 {
   background-color: #f2d46c;
+  text-transform: uppercase;
+
 }
 
 .outline-warning
@@ -80,18 +88,27 @@
   color:#f2d46c;
   border: 2px solid;
   background-color: transparent;
+  text-transform: uppercase;
+
 }
 
 .btn-danger
 {
   background-color: #ce430c;
+  text-transform: uppercase;
 }
 
+.txt-danger
+{
+  color: #ce430c;
+}
 .outline-danger
 {
   color: #ce430c;
   border: 2px solid;
   background-color: transparent;
+  text-transform: uppercase;
+
 }
 
 .btn-disabled
@@ -183,6 +200,8 @@ h1
   text-transform: uppercase;
   letter-spacing: 4.8px;
   line-height: 50px;
+  padding:0 50px;
+
 
 }
 
@@ -194,6 +213,7 @@ h2
   text-transform: uppercase;
   letter-spacing: 4px;
   line-height: 30px;
+  padding:0 50px;
 
 }
 
@@ -205,6 +225,7 @@ h3
   text-transform: uppercase;
   letter-spacing: 3.2px;
   line-height: 20px;
+  padding:0 50px;
 
 }
 
@@ -216,6 +237,7 @@ h4
   text-transform: uppercase;
   letter-spacing: 2.4px;
   line-height: 10px;
+  padding:0 50px;
 
 }
 
@@ -227,6 +249,7 @@ h5
   text-transform: uppercase;
   letter-spacing: 1.6px;
   line-height: 5px;
+  padding:0 50px;
 
 }
 
@@ -238,12 +261,18 @@ h6
   text-transform: uppercase;
   letter-spacing: 0.8px;
   line-height: 3px;
+  padding:0 50px;
+
 }
 
 p
 {
   font-size:14px;
   font-family: lato;
+  text-align: justify;
+  letter-spacing: 1px;
+  line-height: 22px;
+  padding:0 50px;
 }
 
 .quote
@@ -252,6 +281,8 @@ p
   font-family: 'Permanent Marker', cursive;
   letter-spacing: 1px;
   color:#4a6747;
+  padding:0 100px;
+
 }
 
 cite
@@ -259,6 +290,8 @@ cite
   font-size:14px;
   font-family: lato;
   font-style: italic;
+  padding:0 200px;
+
 }
 
 lead
@@ -267,4 +300,104 @@ lead
   font-family: lato;
   font-weight: bold;
   letter-spacing: 1px;
+  padding:0 50px;
+}
+
+ul,ol
+{
+  padding:0 50px;
+  width: fit-content;
+}
+
+ul li
+{
+  list-style-type: none;
+}
+
+ul li::before
+{
+  color: black;
+  content: "\2022";
+  font-size: 1em;
+  padding-right: 1.1225em;
+  position: relative;
+  top: 0em;
+}
+
+.no-bullet li::before
+{
+  color: transparent;
+  content: "\2022";
+  font-size: 1em;
+  padding-right: 1.1225em;
+  position: relative;
+  top: 0em;
+}
+
+ol li::before
+{
+  color: black;
+  content: counter(li);
+  font-size: 1em;
+  padding-right: 1.1225em;
+  position: relative;
+  top: 0em;
+}
+
+li
+{
+  font-size:14px;
+  font-family: lato;
+  letter-spacing: 1px;
+  list-style-type: disc;
+  vertical-align: center;
+  background-color: #8d9f85;
+  padding: 10px;
+  color: white;
+}
+
+.active-item
+{
+  color: white;
+  background-color:#4a6747;
+}
+
+.disabled-item
+{
+  color: #B1B6B1;
+  background-color:#F4F5FC;
+}
+
+.danger-item
+{
+  color: white;
+  background-color:#ce430c;
+}
+
+.warning-item
+{
+  color: white;
+  background-color:#f2d46c;
+}
+
+.success-item
+{
+  color: white;
+  background-color:#04ACA1;
+}
+
+
+
+hr
+{
+  border-top: 2px solid #4a6747;
+  box-shadow: 10px 2px 2px #F4F5FC;;
+}
+
+.badge-danger
+{
+  color:white;
+  background-color: #ce430c;
+  border-radius: 30px;
+  align-self: flex-end;
 }
