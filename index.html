@@ -7,9 +7,31 @@
     <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
     <!--quotation font-->
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Permanent+Marker" rel="stylesheet">
+    <!--icon link-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
   </head>
 
   <body>
+    <header>
+      <nav>
+        <div class="nav-logo">Acqua theme
+        </div>
+        <div class="nav-row">
+          <div class="nav-list">
+            <div class="nav-link"><a href="#">Home</a></div>
+            <div class="nav-link"><a href="#">Profile</a></div>
+            <div class="nav-link"><a href="#">Contact</a></div>
+          </div>
+          <div class="nav-list">
+            <div class="nav-link"><a href="#">Sign In</a></div>
+            <div class="nav-link"><a href="#">Sign Up</a></div>
+            <div class="nav-link"><a href="#">Sign Out</a> </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="body">
     <!--BELOW TITLE DISPLAY-->
     <div>
       <h1>julie's ui kit - h1</h1>
@@ -19,7 +41,6 @@
       <h5>julie's ui kit - h5</h5>
       <h6>julie's ui kit - h6</h6>
     </div>
-
 
     <hr>
     <h4>These are the basic semantic colors:</h4>
@@ -33,7 +54,7 @@
           <div class="btn-secondary color-demo"></div>
           <div class="label">Secondary<br>#8d9f85</div>
         </div>
-      </div>
+      </div><br>
 
       <div class="horizontal-container">
         <div>
@@ -48,7 +69,7 @@
           <div class="color-demo" style="background-color:#d9d2de;"></div>
           <div class="label">Light<br>#d9d2de</div>
         </div>
-      </div>
+      </div><br>
       <div class="horizontal-container">
         <div>
           <div class="btn-success color-demo"></div>
@@ -64,7 +85,7 @@
           <div class="label">Danger<br>#ce430c</div>
         </div>
 
-      </div>
+      </div><br>
       <div class="horizontal-container">
         <div>
           <div class="color-demo" style="background-color:#0C547C;"></div>
@@ -84,20 +105,22 @@
     <hr>
     <h4>text colors</h4>
     <div>
-      <h6 class="horizontal-container">
-        <span class="horizontal-elementt txt-primary">.txt-primary</span>
-        <span class="horizontal-elementt txt-secondary">.txt-secondary</span>
-        <span class="horizontal-elementt txt-dark">.txt-dark</span>
-        <span class="horizontal-elementt txt-medlight">.txt-medlight</span>
-        <span class="horizontal-elementt txt-light">.txt-light</span>
-      </h6>
+      <div class="horizontal-container flex-box flex-wrap">
+        <span class="horizontal-element txt-primary">.txt-primary</span>
+        <span class="horizontal-element txt-secondary">.txt-secondary</span>
+        <span class="horizontal-element txt-dark">.txt-dark</span>
+        <span class="horizontal-element txt-medlight">.txt-medlight</span>
+        <span class="horizontal-element txt-light">.txt-light</span>
+        <span class="horizontal-element txt-danger">.txt-danger</span>
+        <span class="horizontal-element txt-success">.txt-success</span>
+      </div>
     </div>
 
     <hr>
     <h4>Buttons</h4>
     <div>
-      <div>
-        <p>Available class: "btn"</p>
+      <p>Available class: "btn"</p>
+      <div class="flex-box flex-around">
         <button type="button" class="btn  btn-primary">primary</button>
         <button type="button" class="btn  btn-secondary">secondary</button>
         <button type="button" class="btn  btn-success">SUCCESS!</button>
@@ -110,8 +133,8 @@
         <button type="button" >default</button>
       </div>
 
-      <div>
-        <p>Available class: "btn btn-sm"</p>
+      <p>Available class: "btn btn-sm"</p>
+      <div class="flex-box flex-around">
         <button type="button" class="btn btn-sm btn-primary">primary</button>
         <button type="button" class="btn btn-sm btn-secondary">secondary</button>
         <button type="button" class="btn btn-sm btn-success">SUCCESS!</button>
@@ -124,22 +147,8 @@
         <button type="button" >default</button>
       </div>
 
-      <div>
-        <p>Available class: "btn btn-gd"</p>
-        <button type="button" class="btn btn-gd btn-primary">primary</button>
-        <button type="button" class="btn btn-gd btn-secondary">secondary</button>
-        <button type="button" class="btn btn-gd btn-success">SUCCESS!</button>
-
-        <button type="button" class="btn btn-gd btn-warning">WARNING!</button>
-        <button type="button" class="btn btn-gd btn-danger">DANGER!</button>
-        <button type="button" class="btn btn-gd btn-info">info</button>
-        <button type="button" class="btn btn-gd btn-link">link</button>
-        <button type="button" class="btn btn-gd btn-disabled">disabled</button>
-        <button type="button" >default</button>
-      </div>
-
-      <div>
-        <p>Available class: "btn outline"</p>
+      <p>Available class: "btn outline"</p>
+      <div  class="flex-box flex-around" >
         <button type="button" class="btn outline-primary">primary</button>
         <button type="button" class="btn outline-secondary">secondary</button>
         <button type="button" class="btn outline-success">SUCCESS!</button>
@@ -149,6 +158,20 @@
         <button type="button" class="btn outline-info">info</button>
         <button type="button" class="btn outline-link">link</button>
         <button type="button" class="btn outline-disabled">disabled</button>
+        <button type="button" >default</button>
+      </div>
+
+      <p>Available class: "btn btn-gd"</p>
+      <div class="flex-box flex-around" >
+        <button type="button" class="btn btn-gd btn-primary">primary</button>
+        <button type="button" class="btn btn-gd btn-secondary">secondary</button>
+        <button type="button" class="btn btn-gd btn-success">SUCCESS!</button>
+
+        <button type="button" class="btn btn-gd btn-warning">WARNING!</button>
+        <button type="button" class="btn btn-gd btn-danger">DANGER!</button>
+        <button type="button" class="btn btn-gd btn-info">info</button>
+        <button type="button" class="btn btn-gd btn-link">link</button>
+        <button type="button" class="btn btn-gd btn-disabled">disabled</button>
         <button type="button" >default</button>
       </div>
     </div>
@@ -170,28 +193,88 @@
 
     <hr>
     <h4>lists</h4>
-    <div>
-      <p>Here is an unordered list</p>
-      <ul>
-        <li class="active-item">Active item and it's further description</li>
-        <li>Normal item and it's further description</li>
-        <li class="disabled-item">Disabled item and it's further description</li>
-
-      </ul>
-
-      <p>Here is an unordered list without bullet points</p>
-      <ul class="no-bullet">
-        <li class="warning-item">Warning item and it's further description</li>
-        <li class="success-item">Success item and it's further description</li>
-        <li class="danger-item">Danger item and it's further description</li>
-
-      </ul>
-      <p>Here is an ordered list</p>
-      <ol>
-        <li class="txt-danger">first item clearly somthing is wrong</li>
-        <li class="txt-danger">first item clearly somthing is wrong</li>
-        <li class="txt-danger">first item clearly somthing is wrong</li>
-      </ol>
+    <div class="list-group">
+      <div class="list-item active-item first-item">Active item and it's further description, also first item</div>
+      <div class="list-item">Normal item and it's further description rrrrrrrrrrrrrrrhhhhhhhhhhhhhh</div>
+      <div class="list-item disabled-item">Disabled item and it's further description</div>
+      <div class="list-item warning-item">Warning item and it's further description</div>
+      <div class="list-item success-item">Success item and it's further description</div>
+      <div class="list-item danger-item last-item">Danger item and it's further description and last item </div>
     </div>
+
+    <hr>
+    <h4>forms</h4>
+    <p class="txt-danger">there is a wired borderline onclick...</p>
+    <div class="form-group">
+      <label for="name">Please enter your name:</label>
+      <input name="name" class="form-item" placeholder="Please enter your name"></input><br>
+      <label for="email">Please enter your email:</label>
+      <input name="email" class="form-item" placeholder="Please enter your email"></input><br>
+      <label for="pet">Please choose your pet:</label>
+      <select name="pet" class="form-item" >
+        <option value="">--Please choose an option--</option>
+        <option value="dog">Dog</option>
+        <option value="cat">Cat</option>
+      </select><br>
+      <div class="flex-box flex-wrap flex-around">
+        <button type="button" class="btn btn-gd btn-success">SUBMIT</button>
+        <button type="button" class="btn btn-gd btn-danger">CANCEL</button>
+      </div>
+    </div>
+
+    <hr>
+    <h4>card</h4>
+    <div class="flex-box flex-wrap flex-around">
+      <div>
+        <p>Card with image and button</p>
+        <div class="card-group">
+          <div class="list-item active-item first-item">Card title: aka active list item and first-item</div>
+          <img class="card-title-image" src="bg.jpg" alt="card-title-image"/>
+          <div class="list-item">Card item: aka normal list item</div>
+          <div class="list-item warning-item">Warning: aka warning list item</div>
+          <div class="list-item last-item" style="display:flex; justify-content:center;">
+            <button type="button" class="btn btn-gd btn-primary">button</button>
+          </div>
+        </div>
+      </div>
+      <div>
+        <p>Card with image and paragraph</p>
+        <div class="card-group">
+          <img class="card-title-image first-item" src="bg.jpg" alt="card-title-image"/>
+          <div class="list-item last-item">This is a paragraph. The party system is the modern equivalent of the tribal or sectarian system. A society governed by one party is similar to one which is governed by one tribe or one sect. The party, as shown,
+            represents the perception of a certain group of people, or the interests of one group in society, or one belief, or one region.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+    <h4>alert</h4>
+    <div>
+      <div class="alert alert-success">
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+        This is success alert box.
+      </div>
+      <div class="alert alert-warning">
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+        This is warning alert box.
+      </div>
+      <div class="alert alert-danger">
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+        This is danger alert box.
+      </div>
+      <div class="alert alert-link">
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+        This is link alert box.
+      </div>
+      <div class="alert alert-info">
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+        This is info alert box.
+      </div>
+    </div>
+    </div>
+    <footer>
+      <div class="footer-signiture">Powered by Julie</div>
+    </footer>
   </body>
 </html>
