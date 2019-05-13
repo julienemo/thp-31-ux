@@ -1,3 +1,9 @@
+/*body
+{
+  background-image:url('bg.jpg');
+  repeat:none;
+}*/
+
 .btn
 {
   color:white;
@@ -20,12 +26,16 @@
 
 .btn-primary
 {
-  background-color: #09393B;
+  background-color: #4a6747;
 }
 
+.txt-primary
+{
+  color: #4a6747;
+}
 .outline-primary
 {
-  color:#09393B;
+  color: #4a6747;
   border: 2px solid;
   background-color: transparent;
 }
@@ -33,12 +43,16 @@
 
 .btn-secondary
 {
-  background-color: #33A1B2;
+  background-color: #8d9f85;
 }
 
+.txt-secondary
+{
+  color: #8d9f85;
+}
 .outline-secondary
 {
-  color:#33A1B2;
+  color:#8d9f85;
   border: 2px solid;
   background-color: transparent;
 }
@@ -57,24 +71,24 @@
 
 .btn-warning
 {
-  background-color: #E56F1B;
+  background-color: #f2d46c;
 }
 
 .outline-warning
 {
-  color: #E56F1B;
+  color:#f2d46c;
   border: 2px solid;
   background-color: transparent;
 }
 
 .btn-danger
 {
-  background-color: #BD444A;
+  background-color: #ce430c;
 }
 
 .outline-danger
 {
-  color: #BD444A;
+  color: #ce430c;
   border: 2px solid;
   background-color: transparent;
 }
@@ -117,4 +131,100 @@
   color: #33A1B2;
   border: 2px solid;
   background-color: transparent;
+}
+
+.color-demo
+{
+  width:80px;
+  height:50px;
+  border-radius: 10px 10px 0 0;
+}
+.label
+{
+  width:80px;
+  height:50px;
+  border-radius: 0 0 10px 10px ;
+  background-color: #F4F5FC;
+  text-align:center;
+}
+
+.txt-dark
+{
+  color:#3b4544;
+}
+.txt-medlight
+{
+  color:#737971;
+}
+.txt-light
+{
+  color:#d9d2de;
+}
+
+
+.horizontal-container
+{
+  display:flex;
+  flex-direction:wrap;
+  justify-content: space-around;
+}
+
+.horizontal-element
+{
+  display:inline-block;
+}
+
+h1
+{
+  font-size: 40px;
+  font-weight:bold;
+  font-family: lato;
+  text-transform: uppercase;
+  letter-spacing: 4.8px;
+}
+
+h2
+{
+  font-size: 30px;
+  font-weight:bold;
+  font-family: lato;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+
+}
+
+h3
+{
+  font-size: 25px;
+  font-weight:bold;
+  font-family: lato;
+  text-transform: uppercase;
+  letter-spacing: 3.2px;
+}
+
+h4
+{
+  font-size: 20px;
+  font-weight:bold;
+  font-family: lato;
+  text-transform: uppercase;
+  letter-spacing: 2.4px;
+}
+
+h5
+{
+  font-size: 15px;
+  font-weight:bold;
+  font-family: lato;
+  text-transform: uppercase;
+  letter-spacing: 1.6px;
+}
+
+h6
+{
+  font-size: 12px;
+  font-weight:bold;
+  font-family: lato;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
 }

@@ -1,67 +1,153 @@
 <!DOCTYPE html>
 <html>
-<p>Available class: "btn"</p>
   <head>
     <title>Julie's UI kit</title>
     <link href="style.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
   </head>
 
   <body>
+    <!--BELOW TITLE DISPLAY-->
     <div>
-      <button type="button" class="btn  btn-primary">primary</button>
-      <button type="button" class="btn  btn-secondary">secondary</button>
-      <button type="button" class="btn  btn-warning">WARNING!</button>
-      <button type="button" class="btn  btn-danger">DANGER!</button>
-      <button type="button" class="btn  btn-success">SUCCESS!</button>
-      <button type="button" class="btn  btn-info">info</button>
-      <button type="button" class="btn  btn-link">link</button>
-      <button type="button" class="btn  btn-disabled">disabled</button>
-      <button type="button" >default</button>
-    </div>
-    <div>
-      <p>Available class: "btn btn-sm"</p>
-      <button type="button" class="btn btn-sm btn-primary">primary</button>
-      <button type="button" class="btn btn-sm btn-secondary">secondary</button>
-      <button type="button" class="btn btn-sm btn-warning">WARNING!</button>
-      <button type="button" class="btn btn-sm btn-danger">DANGER!</button>
-      <button type="button" class="btn btn-sm btn-success">SUCCESS!</button>
-      <button type="button" class="btn btn-sm btn-info">info</button>
-      <button type="button" class="btn btn-sm btn-link">link</button>
-      <button type="button" class="btn btn-sm btn-disabled">disabled</button>
-      <button type="button" >default</button>
-    </div>
-    <div>
-      <p>Available class: "btn btn-gd"</p>
-      <button type="button" class="btn btn-gd btn-primary">primary</button>
-      <button type="button" class="btn btn-gd btn-secondary">secondary</button>
-      <button type="button" class="btn btn-gd btn-warning">WARNING!</button>
-      <button type="button" class="btn btn-gd btn-danger">DANGER!</button>
-      <button type="button" class="btn btn-gd btn-success">SUCCESS!</button>
-      <button type="button" class="btn btn-gd btn-info">info</button>
-      <button type="button" class="btn btn-gd btn-link">link</button>
-      <button type="button" class="btn btn-gd btn-disabled">disabled</button>
-      <button type="button" >default</button>
+      <h1>julie's ui kit</h1>
+      <h2>julie's ui kit</h2>
+      <h3>julie's ui kit</h3>
+      <h4>julie's ui kit</h4>
+      <h5>julie's ui kit</h5>
+      <h6>julie's ui kit  </h6>
     </div>
 
+
+    <h4>These are the basic semantic colors:</h4>
     <div>
-      <p>Available class: "btn outline"</p>
-      <button type="button" class="btn outline-primary">primary</button>
-      <button type="button" class="btn outline-secondary">secondary</button>
-      <button type="button" class="btn outline-warning">WARNING!</button>
-      <button type="button" class="btn outline-danger">DANGER!</button>
-      <button type="button" class="btn outline-success">SUCCESS!</button>
-      <button type="button" class="btn outline-info">info</button>
-      <button type="button" class="btn outline-link">link</button>
-      <button type="button" class="btn outline-disabled">disabled</button>
-      <button type="button" >default</button>
+      <div class="horizontal-container">
+        <div class="horizontal-element">
+          <div class="btn-primary color-demo"></div>
+          <div class="label">Primary<br>#4a6747</div>
+        </div>
+        <div>
+          <div class="btn-secondary color-demo"></div>
+          <div class="label">Secondary<br>#8d9f85</div>
+        </div>
+      </div>
+
+      <div class="horizontal-container">
+        <div>
+          <div class="color-demo" style="background-color:#3b4544;"></div>
+          <div class="label">Dark<br>#3b4544</div>
+        </div>
+        <div>
+          <div class="color-demo" style="background-color:#737971;"></div>
+          <div class="label">Medium-light<br>#737971</div>
+        </div>
+        <div>
+          <div class="color-demo" style="background-color:#d9d2de;"></div>
+          <div class="label">Light<br>#d9d2de</div>
+        </div>
+      </div>
+      <div class="horizontal-container">
+        <div>
+          <div class="btn-success color-demo"></div>
+          <div class="label">Success<br>#04ACA1</div>
+        </div>
+
+        <div>
+          <div class="color-demo" style="background-color:#f2d46c;"></div>
+          <div class="label">Warning<br>#f2d46c</div>
+        </div>
+        <div>
+          <div class="color-demo" style="background-color:#ce430c;"></div>
+          <div class="label">Danger<br>#ce430c</div>
+        </div>
+
+      </div>
+      <div class="horizontal-container">
+        <div>
+          <div class="color-demo" style="background-color:#0C547C;"></div>
+          <div class="label">Info<br>#0C547C</div>
+        </div>
+        <div>
+          <div class="color-demo" style="background-color:#33A1B2;"></div>
+          <div class="label">Link<br>#33A1B2</div>
+        </div>
+        <div>
+          <div class="color-demo" style="background-color:#F4F5FC;"></div>
+          <div class="label">background<br>#F4F5FC</div>
+        </div>
+      </div>
     </div>
 
-    <h1 class="txt-primary">this is primary</h1>
-    <h1 class="txt-secondary">this is secondary</h1>
-    <h1 class="txt-info">this is info</h1>
-    <h1 class="txt-danger">this is danger</h1>
-    <h1 class="txt-warning">this is warning</h1>
-    <h1 class="txt-link">this is link</h1>
-    <h1 class="txt-success">this is success</h1>
+
+    <h4>text colors</h4>
+    <div>
+      <h6 class="horizontal-container">
+        <span class="horizontal-elementt txt-primary">.txt-primary</span>
+        <span class="horizontal-elementt txt-secondary">.txt-secondary</span>
+        <span class="horizontal-elementt txt-dark">.txt-dark</span>
+        <span class="horizontal-elementt txt-medlight">.txt-medlight</span>
+        <span class="horizontal-elementt txt-light">.txt-light</span>
+      </h6>
+    </div>
+
+
+    <h4>Buttons</h4>
+    <div>
+      <div>
+        <p>Available class: "btn"</p>
+        <button type="button" class="btn  btn-primary">primary</button>
+        <button type="button" class="btn  btn-secondary">secondary</button>
+        <button type="button" class="btn  btn-success">SUCCESS!</button>
+
+        <button type="button" class="btn  btn-warning">WARNING!</button>
+        <button type="button" class="btn  btn-danger">DANGER!</button>
+        <button type="button" class="btn  btn-info">info</button>
+        <button type="button" class="btn  btn-link">link</button>
+        <button type="button" class="btn  btn-disabled">disabled</button>
+        <button type="button" >default</button>
+      </div>
+
+      <div>
+        <p>Available class: "btn btn-sm"</p>
+        <button type="button" class="btn btn-sm btn-primary">primary</button>
+        <button type="button" class="btn btn-sm btn-secondary">secondary</button>
+        <button type="button" class="btn btn-sm btn-success">SUCCESS!</button>
+
+        <button type="button" class="btn btn-sm btn-warning">WARNING!</button>
+        <button type="button" class="btn btn-sm btn-danger">DANGER!</button>
+        <button type="button" class="btn btn-sm btn-info">info</button>
+        <button type="button" class="btn btn-sm btn-link">link</button>
+        <button type="button" class="btn btn-sm btn-disabled">disabled</button>
+        <button type="button" >default</button>
+      </div>
+
+      <div>
+        <p>Available class: "btn btn-gd"</p>
+        <button type="button" class="btn btn-gd btn-primary">primary</button>
+        <button type="button" class="btn btn-gd btn-secondary">secondary</button>
+        <button type="button" class="btn btn-gd btn-success">SUCCESS!</button>
+
+        <button type="button" class="btn btn-gd btn-warning">WARNING!</button>
+        <button type="button" class="btn btn-gd btn-danger">DANGER!</button>
+        <button type="button" class="btn btn-gd btn-info">info</button>
+        <button type="button" class="btn btn-gd btn-link">link</button>
+        <button type="button" class="btn btn-gd btn-disabled">disabled</button>
+        <button type="button" >default</button>
+      </div>
+
+      <div>
+        <p>Available class: "btn outline"</p>
+        <button type="button" class="btn outline-primary">primary</button>
+        <button type="button" class="btn outline-secondary">secondary</button>
+        <button type="button" class="btn outline-success">SUCCESS!</button>
+
+        <button type="button" class="btn outline-warning">WARNING!</button>
+        <button type="button" class="btn outline-danger">DANGER!</button>
+        <button type="button" class="btn outline-info">info</button>
+        <button type="button" class="btn outline-link">link</button>
+        <button type="button" class="btn outline-disabled">disabled</button>
+        <button type="button" >default</button>
+      </div>
+    </div>
+
   </body>
 </html>
